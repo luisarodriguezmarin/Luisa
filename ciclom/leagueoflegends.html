@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<body>
+		<h1>League of Leyends</h1>
+		<h2>Encuesta sobre campeones</h2>
+		<p>Cuando aparezca un * al lado de un campo es obligatorio introducir un valor</p>
+		<form action="procesar_campeon.php" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for=”nombre”>
+				Nombre:
+				<span aria-label="required">*</span>
+				<input type="text" id="name" name="user_name">
+			</label>
+			<label for=”apellidos”>
+				Apellidos:
+				<span aria-label="required">*</span>
+				<input type="text" id="name" name="user_name">
+			</label>
+			<br>
+			<label for=”correo”>
+				Correo:
+				<span aria-label="required">*</span>
+				<input type="text" id="name" name="user_name">
+			</label>
+			<label for=”ciudad”>
+				Ciudad:
+				<input type="text" id="name" name="user_name">
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>Selecciona tu campeón favorito</legend>
+			<label for="html">Campeones</label>
+			<select id="camperones" name="campeones">
+			<option value="AATROX">AATROX</option>
+			<option value="AHRI">AHRI</option>
+			<option value="AKALI">AKALI</option>
+   			</select>
+   		</fieldset>
+   		<fieldset>
+			<legend>¿Qué otros campeones estarías dispuesto a utilizar?</legend>
+			<input type="radio" id="name" name="camperones" value="AKSHAN">
+			<label for="html">AKSHAN</label>
+			<input type="radio" id="name" name="camperones" value="ALISTAR">
+			<label for="html">ALISTAR</label>
+			<input type="radio" id="name" name="camperones" value="AMUMU">
+			<label for="html">AMUMU</label>
+   		</fieldset>
+   		<br>
+   		<button type=”submit”>Escribir Datos</button>
+   		</form>
+	</body>
+</html>
