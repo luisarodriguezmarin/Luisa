@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Define el nombre de la pestaña, el charset, la respuesta de la página y el vínculo del archivo CSS-->
+<title>Nook's Cranny</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="nooksCranny.css">
+</head>
+<body>
+
+  <div class="header">
+    <!--Imagen del cartel de la tienda-->
+    <img src="imagenes/nooksCrannyLogo.jpeg" alt="logo" class="center">
+  </div>
+
+<div class="topnav">
+  <!--Barra de navegación que enlaza las secciones de la página web-->
+    <a href="index.html">Inicio</a>
+    <a href="articulosTemporada.html">Artículos de temporada</a>
+    <a href="articulosTodoAnyo.html">Artículos de todo el año</a>
+    <a href="miscelaneos.html">Misceláneos</a>
+    <a href="papelPintado.html">Papel pintado</a>
+    <a href="suelos.html">Suelos</a>
+    <a href="consultarDisponibilidad.html">Consultar disponibilidad</a>
+    <a href="https://forms.gle/saewxRgisTcxjWpSA">Valora nuestra web</a>
+</div>
+
+<div class="content">
+  <!--Presentación de la sección-->
+  <h2>Iniciar sesión</h2>
+  <!--Formulario para iniciar sesión una vez se haya creado la cuenta en registro.html-->
+  <form action="iniciar_sesion.php" method="post">
+    <fieldset><br><br>
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="contrasenya">Contraseña:</label>
+      <input type="password" id="contrasenya" name="contrasenya"><br><br>
+     </fieldset><br><br>
+     <input type="submit" value="Iniciar sesión">
+   </form>
+   <!--Redirige a la página de registro registro.html-->
+  <p>¿No tienes una? Regístrate <a href="registro.html">aquí</a></p>
+</div>
+
+<div class="footer">
+  <!--Indica el autor del sitio web-->
+  <p>Realizado por: Luisa Rodríguez Marín</p>
+</div>
+
+</body>
+</html>

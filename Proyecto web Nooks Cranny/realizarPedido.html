@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--Define el nombre de la pestaña, charset, respuesta de la página y vínculo del archivo CSS-->
+<title>Nook's Cranny</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="nooksCranny.css">
+</head>
+<body>
+
+  <div class="header">
+    <!--Imagen del cartel de la tienda-->
+    <img src="imagenes/nooksCrannyLogo.jpeg" alt="logo" class="center">
+  </div>
+
+<div class="topnav">
+  <!--Barra de navegación con enlaces a las secciones de la tienda-->
+    <a href="index.html">Inicio</a>
+    <a href="articulosTemporada.html">Artículos de temporada</a>
+    <a href="articulosTodoAnyo.html">Artículos de todo el año</a>
+    <a href="miscelaneos.html">Misceláneos</a>
+    <a href="papelPintado.html">Papel pintado</a>
+    <a href="suelos.html">Suelos</a>
+    <a href="consultarDisponibilidad.html">Consultar disponibilidad</a>
+    <a href="iniciarSesion.html">Iniciar sesión</a>
+    <a href="https://forms.gle/saewxRgisTcxjWpSA">Valora nuestra web</a>
+</div>
+
+<div class="content">
+  <!--Presentación de la sección-->
+  <h2>Realizar pedido</h2>
+  <!--Formulario de realización del pedido que será procesado por realizar_pedido.php-->
+  <form action="realizar_pedido.php" method="post">
+    <fieldset><br><br>
+      <label for="nombre">Introduce el nombre del artículo:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+     </fieldset><br><br>
+     <input type="submit" value="Realizar Pedido">
+   </form>
+</div>
+
+<div class="footer">
+  <!--Indica el autor de la página-->
+  <p>Realizado por: Luisa Rodríguez Marín</p>
+</div>
+
+</body>
+</html>
